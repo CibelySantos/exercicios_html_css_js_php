@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    background-color: #4c0072;
+    background-image: linear-gradient(62deg, #4c0072 0%, #c74fff 100%);
+}
+.navbar {
+    background-color: #4c0072;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-header a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.navbar-header a:hover {
+    color: #c74fff;
+
+}
+.nav.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+.nav.navbar-nav li {
+    margin-left: 20px;
+}
+.nav.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.nav.navbar-nav li a:hover {
+    color: #c74fff;
+    border-radius: 5px;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    text-align: left;
+    margin-top: 7%;
+    margin-left: 30%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4c0072;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4c0072;
+    border-radius: 4px;
+}
+input:invalid, select:invalid, textarea:invalid {
+    border-color: #4c0072;
+}
+.botao {
+    background-color: #4c0072;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.botao:hover {
+    background-color:#c74fff;
+}
+.feedback-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.feedback-item strong {
+    font-weight: bold;
+    color: #4c0072;
+}
+.thank-you {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4c0072;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+    .navbar-header a {
+        margin-left: 0;
+    }
+    .nav.navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+    .nav.navbar-nav li {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        margin: 20px;
+        width: 90%;
+    }
+}
