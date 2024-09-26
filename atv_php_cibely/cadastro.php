@@ -9,7 +9,7 @@
     <body>
         <div class="form-container">
             <h2>Formulário de Contato</h2>
-            <form action="./exerc_PHP/processar_cadastro.php" method="post">
+            <form action="./processar_cadastro.php" method="post">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                 <label for="email">E-mail:</label>
